@@ -17,7 +17,7 @@
 # Outlook not so good
 # Very doubtful
 
-import random
+import secrets
 
 name = 'Johnny'
 
@@ -25,7 +25,7 @@ question = input(str('Ask your question: '))
 
 answer = ''
 
-random_number = random.randint(1, 9)
+random_number = secrets.SystemRandom().randint(1, 9)
 
 if random_number == 1:
   answer = 'Yes, definitely'
