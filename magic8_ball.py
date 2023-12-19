@@ -25,9 +25,8 @@ question = input(str('Ask your question: '))
 
 answer = ''
 
-random_number = secrets.SystemRandom().randint(1, 9)
 
-if random_number == 1:
+if (random_number := secrets.SystemRandom().randint(1, 9)) == 1:
   answer = 'Yes, definitely'
 
 elif random_number == 2:
